@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wallet</title>
+  </head>
+  <body>
+    <div class="maininfo">
+      <h1>Welcome to your new wallet</h1>
+      <h2>Your public key is</h2>
+      <h3>Wallet id -<%= pubkey %></h3>
+      <h4>1 SOL has been added as signing-bonus</h4>
+      <a
+        class="hi walletmake"
+        href="https://explorer.solana.com/address/<%=pubkey%>?cluster=devnet"
+        target="_blank"
+      >
+        click to view your wallet</a
+      >
+      <a href="/make-your-own-token" class="hi tokenmake"
+        >click to make your own token</a
+      >
+    </div>
+  </body>
+</html>

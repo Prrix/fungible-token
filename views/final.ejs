@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your token is ready</title>
+  </head>
+  <body>
+    <div class="maininfo">
+      <h1>Your Token is Ready🎉</h1>
+      <h2>Congratulations!! Your token was Successfully Minted</h2>
+      <h3>Mint Id : <%= MINT_KEY %></h3>
+      <a
+        class="hi walletmake"
+        href="https://explorer.solana.com/address/<%=MINT_KEY%>?cluster=devnet"
+        target="_blank"
+      >
+        Click to View Token</a
+      >
+      <a href="/make-your-own-token" class="hi tokenmake"
+        >click to make another token</a
+      >
+    </div>
+  </body>
+</html>
